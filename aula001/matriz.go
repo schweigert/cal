@@ -12,6 +12,11 @@ func newMatrix(n int) [][]int {
   return r
 }
 
+func mullMatrix(a [][]int, b [][]int) [][]int {
+  r := newMatrix(3)
+  return r
+}
+
 func printMatrix(matrix [][]int) {
   for i := range matrix {
     for j := range matrix {
