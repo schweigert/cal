@@ -13,6 +13,11 @@ for i in quantia
 	c = File.open "#{i}c.in", "w"
 	d = File.open "#{i}d.in", "w"
 
+	a.puts i
+	b.puts i
+	c.puts i
+	d.puts i
+
 	# Posicao do desvio
 	pos = rand(i)
 
