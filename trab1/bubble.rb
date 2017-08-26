@@ -13,6 +13,3 @@ for i in 0..(size-1)
 		source[i], source[j] = source[j], source[i] if (source[i] > source[j])
 	end
 end
-
-
-
