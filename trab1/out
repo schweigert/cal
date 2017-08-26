@@ -1,22 +1,108 @@
 time ruby insert.rb < 25000a.in
 Insert: 25000
-0.000517931
+8.1821e-05
 time ruby insert.rb < 50000a.in
 Insert: 50000
-0.000998702
+0.000145566
 time ruby insert.rb < 100000a.in
 Insert: 100000
-0.002169006
+0.000218894
 time ruby insert.rb < 1000000a.in
 Insert: 1000000
-0.022870711
+0.00185847
 time ruby insert.rb < 25000b.in
 Insert: 25000
-1.073727655
+0.009626647
 time ruby insert.rb < 50000b.in
 Insert: 50000
-4.42843399
+0.039148689
 time ruby insert.rb < 100000b.in
 Insert: 100000
-17.419136354
+0.147741426
 time ruby insert.rb < 1000000b.in
+Insert: 1000000
+15.007291196
+time ruby insert.rb < 25000c.in
+Insert: 25000
+0.007592549
+time ruby insert.rb < 50000c.in
+Insert: 50000
+0.025840696
+time ruby insert.rb < 100000c.in
+Insert: 100000
+0.104154898
+time ruby insert.rb < 1000000c.in
+Insert: 1000000
+9.627790751
+time ruby insert.rb < 25000d.in
+Insert: 25000
+0.00640429
+time ruby insert.rb < 50000d.in
+Insert: 50000
+0.025851917
+time ruby insert.rb < 100000d.in
+Insert: 100000
+0.105325427
+time ruby insert.rb < 1000000d.in
+Insert: 1000000
+10.029994166
+time ruby bucket.rb < 25000a.in
+Bucket: 25000
+0.128035445
+time ruby bucket.rb < 50000a.in
+Bucket: 50000
+0.263583868
+time ruby bucket.rb < 100000a.in
+Bucket: 100000
+0.638061219
+time ruby bucket.rb < 1000000a.in
+Bucket: 1000000
+6.797925105
+time ruby bucket.rb < 25000b.in
+Bucket: 25000
+0.1271702
+time ruby bucket.rb < 50000b.in
+Bucket: 50000
+0.271212498
+time ruby bucket.rb < 100000b.in
+Bucket: 100000
+0.576560888
+time ruby bucket.rb < 1000000b.in
+Bucket: 1000000
+6.719358952
+time ruby bucket.rb < 25000c.in
+Bucket: 25000
+0.126231092
+time ruby bucket.rb < 50000c.in
+Bucket: 50000
+0.28164983
+time ruby bucket.rb < 100000c.in
+Bucket: 100000
+0.582085373
+time ruby bucket.rb < 1000000c.in
+Bucket: 1000000
+6.401975703
+time ruby bucket.rb < 25000d.in
+Bucket: 25000
+0.146892259
+time ruby bucket.rb < 50000d.in
+Bucket: 50000
+0.316814084
+time ruby bucket.rb < 100000d.in
+Bucket: 100000
+0.6740456
+time ruby bucket.rb < 1000000d.in
+Bucket: 1000000
+7.887172436
+time ruby counting.rb < 25000a.in
+Counting: 25000
+0.79830102
+time ruby counting.rb < 50000a.in
+Counting: 50000
+2.605384349
+time ruby counting.rb < 100000a.in
+Counting: 100000
+8.664523339
+time ruby counting.rb < 1000000a.in
+Counting: 1000000
+makefile:60: recipe for target 'counting_a' failed

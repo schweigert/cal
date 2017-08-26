@@ -1,6 +1,6 @@
 def insertion_sort(arr)
   for i in (1...(arr.size))
-    break if i/ arr.size.to_f > 0.1
+    break if i/ arr.size.to_f > 0.01
     if arr[i-1] > arr[i]
       i.downto(1) do |el|
         if arr[el] < arr[el-1]

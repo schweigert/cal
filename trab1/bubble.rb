@@ -12,7 +12,7 @@ puts "Bubble: #{size}"
 
 t = Time.now
 for i in 0...size
-	break if(i/size.to_f >= 0.1)
+	break if(i/size.to_f >= 0.01)
 	for j in i...size
 		source[i], source[j] = source[j], source[i] if (source[i] > source[j])
 	end
