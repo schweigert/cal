@@ -1,336 +1,336 @@
 time ruby insert.rb < 25000a.in
 Insert: 25000
-8.9116e-05
+7.0937e-05
 time ruby insert.rb < 50000a.in
 Insert: 50000
-0.000121356
+0.000122406
 time ruby insert.rb < 100000a.in
 Insert: 100000
-0.0002053
+0.000237675
 time ruby insert.rb < 500000a.in
 Insert: 500000
-0.000904761
+0.000913854
 time ruby insert.rb < 25000b.in
 Insert: 25000
-0.008999867
+0.009009608
 time ruby insert.rb < 50000b.in
 Insert: 50000
-0.03546846
+0.035361826
 time ruby insert.rb < 100000b.in
 Insert: 100000
-0.141072156
+0.140502955
 time ruby insert.rb < 500000b.in
 Insert: 500000
-3.517623033
+3.509866079
 time ruby insert.rb < 25000c.in
 Insert: 25000
-0.00665017
+0.006088558
 time ruby insert.rb < 50000c.in
 Insert: 50000
-0.02314635
+0.023518924
 time ruby insert.rb < 100000c.in
 Insert: 100000
-0.094949236
+0.095720112
 time ruby insert.rb < 500000c.in
 Insert: 500000
-2.407543936
+2.370094058
 time ruby insert.rb < 25000d.in
 Insert: 25000
-0.00612987
+0.006123426
 time ruby insert.rb < 50000d.in
 Insert: 50000
-0.023153227
+0.023159005
 time ruby insert.rb < 100000d.in
 Insert: 100000
-0.09361506
+0.093957308
 time ruby insert.rb < 500000d.in
 Insert: 500000
-2.426248901
+2.407648199
 time ruby bucket.rb < 25000a.in
 Bucket: 25000
-0.121878218
+0.126102865
 time ruby bucket.rb < 50000a.in
 Bucket: 50000
-0.260655995
+0.260150482
 time ruby bucket.rb < 100000a.in
 Bucket: 100000
-0.541643437
+0.538899082
 time ruby bucket.rb < 500000a.in
 Bucket: 500000
-3.033618514
+2.990707461
 time ruby bucket.rb < 25000b.in
 Bucket: 25000
-0.122081709
+0.124884317
 time ruby bucket.rb < 50000b.in
 Bucket: 50000
-0.260753456
+0.262393876
 time ruby bucket.rb < 100000b.in
 Bucket: 100000
-0.545048042
+0.540990067
 time ruby bucket.rb < 500000b.in
 Bucket: 500000
-2.987142802
+3.017013249
 time ruby bucket.rb < 25000c.in
 Bucket: 25000
-0.124090729
+0.125283546
 time ruby bucket.rb < 50000c.in
 Bucket: 50000
-0.263711072
+0.259917273
 time ruby bucket.rb < 100000c.in
 Bucket: 100000
-0.553044903
+0.544264317
 time ruby bucket.rb < 500000c.in
 Bucket: 500000
-3.033460246
+2.993034265
 time ruby bucket.rb < 25000d.in
 Bucket: 25000
-0.149163215
+0.14747559
 time ruby bucket.rb < 50000d.in
 Bucket: 50000
-0.307335784
+0.305340673
 time ruby bucket.rb < 100000d.in
 Bucket: 100000
-0.650649898
+0.664690986
 time ruby bucket.rb < 500000d.in
 Bucket: 500000
-3.625523565
+3.508886129
 time ruby counting.rb < 25000a.in
 Counting: 25000
-0.635980738
+0.621226017
 time ruby counting.rb < 50000a.in
 Counting: 50000
-2.22128508
+2.213726923
 time ruby counting.rb < 100000a.in
 Counting: 100000
-8.600282509
+8.169189705
 time ruby counting.rb < 500000a.in
 Counting: 500000
-252.815764278
+256.224528064
 time ruby counting.rb < 25000b.in
 Counting: 25000
-0.627367676
+0.612891863
 time ruby counting.rb < 50000b.in
 Counting: 50000
-2.245714238
+2.214098195
 time ruby counting.rb < 100000b.in
 Counting: 100000
-8.520274125
+8.198876109
 time ruby counting.rb < 500000b.in
 Counting: 500000
-259.390727745
+259.790932187
 time ruby counting.rb < 25000c.in
 Counting: 25000
-0.425401046
+0.423809412
 time ruby counting.rb < 50000c.in
 Counting: 50000
-1.582190822
+1.543673164
 time ruby counting.rb < 100000c.in
 Counting: 100000
-5.865267086
+5.69415691
 time ruby counting.rb < 500000c.in
 Counting: 500000
-163.538172979
+161.653303067
 time ruby counting.rb < 25000d.in
 Counting: 25000
-0.721822349
+0.711300502
 time ruby counting.rb < 50000d.in
 Counting: 50000
-2.138832403
+2.092458011
 time ruby counting.rb < 100000d.in
 Counting: 100000
-6.903195722
+6.718167048
 time ruby counting.rb < 500000d.in
 Counting: 500000
-165.853213271
+162.459698555
 time ruby heap.rb < 25000a.in
 Heap: 25000
-0.167893436
+0.168256288
 time ruby heap.rb < 50000a.in
 Heap: 50000
-0.363888308
+0.365510118
 time ruby heap.rb < 100000a.in
 Heap: 100000
-0.777092367
+0.774579638
 time ruby heap.rb < 500000a.in
 Heap: 500000
-4.460924587
+4.420807039
 time ruby heap.rb < 25000b.in
 Heap: 25000
-0.107862306
+0.112420743
 time ruby heap.rb < 50000b.in
 Heap: 50000
-0.242711808
+0.232832545
 time ruby heap.rb < 100000b.in
 Heap: 100000
-0.481128837
+0.509059129
 time ruby heap.rb < 500000b.in
 Heap: 500000
-2.914714261
+3.027547256
 time ruby heap.rb < 25000c.in
 Heap: 25000
-0.111645568
+0.111354271
 time ruby heap.rb < 50000c.in
 Heap: 50000
-0.240809764
+0.243759208
 time ruby heap.rb < 100000c.in
 Heap: 100000
-0.526605985
+0.526923013
 time ruby heap.rb < 500000c.in
 Heap: 500000
-3.000695378
+2.983576179
 time ruby heap.rb < 25000d.in
 Heap: 25000
-0.112997191
+0.114735389
 time ruby heap.rb < 50000d.in
 Heap: 50000
-0.245597674
+0.245929897
 time ruby heap.rb < 100000d.in
 Heap: 100000
-0.535138627
+0.53195023
 time ruby heap.rb < 500000d.in
 Heap: 500000
-3.055003065
+2.948206169
 time ruby merge.rb < 25000a.in
 Merge: 25000
-0.045125872
+0.048921194
 time ruby merge.rb < 50000a.in
 Merge: 50000
-0.094277482
+0.094511458
 time ruby merge.rb < 100000a.in
 Merge: 100000
-0.196185273
+0.195768945
 time ruby merge.rb < 500000a.in
 Merge: 500000
-1.124728233
+1.122842343
 time ruby merge.rb < 25000b.in
 Merge: 25000
-0.048183901
+0.048436376
 time ruby merge.rb < 50000b.in
 Merge: 50000
-0.096938571
+0.09793831
 time ruby merge.rb < 100000b.in
 Merge: 100000
-0.203932975
+0.206497983
 time ruby merge.rb < 500000b.in
 Merge: 500000
-1.137283555
+1.139375292
 time ruby merge.rb < 25000c.in
 Merge: 25000
-0.073977726
+0.075348875
 time ruby merge.rb < 50000c.in
 Merge: 50000
-0.156652539
+0.157527003
 time ruby merge.rb < 100000c.in
 Merge: 100000
-0.326620514
+0.331372715
 time ruby merge.rb < 500000c.in
 Merge: 500000
-1.917887746
+1.980332602
 time ruby merge.rb < 25000d.in
 Merge: 25000
-0.072469089
+0.074298573
 time ruby merge.rb < 50000d.in
 Merge: 50000
-0.160524273
+0.158005958
 time ruby merge.rb < 100000d.in
 Merge: 100000
-0.326813672
+0.329472699
 time ruby merge.rb < 500000d.in
 Merge: 500000
-1.868886091
+1.87649358
 time ruby quick.rb < 25000a.in
 Quick: 25000
-0.129673586
+0.128701663
 time ruby quick.rb < 50000a.in
 Quick: 50000
-0.267160193
+0.280323575
 time ruby quick.rb < 100000a.in
 Quick: 100000
-0.55467983
+0.569263234
 time ruby quick.rb < 500000a.in
 Quick: 500000
-3.169807783
+3.08624794
 time ruby quick.rb < 25000b.in
 Quick: 25000
-0.133486311
+0.129662567
 time ruby quick.rb < 50000b.in
 Quick: 50000
-0.271059946
+0.279482943
 time ruby quick.rb < 100000b.in
 Quick: 100000
-0.577616638
+0.566053801
 time ruby quick.rb < 500000b.in
 Quick: 500000
-3.219882867
+3.103313731
 time ruby quick.rb < 25000c.in
 Quick: 25000
-0.132118354
+0.129805559
 time ruby quick.rb < 50000c.in
 Quick: 50000
-0.276018544
+0.2826851
 time ruby quick.rb < 100000c.in
 Quick: 100000
-0.573323583
+0.560974004
 time ruby quick.rb < 500000c.in
 Quick: 500000
-3.183365651
+3.084838554
 time ruby quick.rb < 25000d.in
 Quick: 25000
-0.126225345
+0.12943184
 time ruby quick.rb < 50000d.in
 Quick: 50000
-0.265671898
+0.27105034
 time ruby quick.rb < 100000d.in
 Quick: 100000
-0.590105104
+0.560777153
 time ruby quick.rb < 500000d.in
 Quick: 500000
-3.144975761
+3.172856276
 time ruby bubble.rb < 25000a.in
 Bubble: 25000
-0.645732687
+0.640731421
 time ruby bubble.rb < 50000a.in
 Bubble: 50000
-2.561236654
+2.599079696
 time ruby bubble.rb < 100000a.in
 Bubble: 100000
-10.245982864
+10.251705095
 time ruby bubble.rb < 500000a.in
 Bubble: 500000
-260.383789912
+304.705385548
 time ruby bubble.rb < 25000b.in
 Bubble: 25000
-1.719071917
+1.716784249
 time ruby bubble.rb < 50000b.in
 Bubble: 50000
-6.838478972
+6.853630061
 time ruby bubble.rb < 100000b.in
 Bubble: 100000
-27.512378921
+27.634074754
 time ruby bubble.rb < 500000b.in
 Bubble: 500000
-689.033924832
+692.352765791
 time ruby bubble.rb < 25000c.in
 Bubble: 25000
-0.668018838
+0.679367985
 time ruby bubble.rb < 50000c.in
 Bubble: 50000
-2.67576644
+2.679569649
 time ruby bubble.rb < 100000c.in
 Bubble: 100000
-10.785542516
+10.67758754
 time ruby bubble.rb < 500000c.in
 Bubble: 500000
-268.959005712
+270.781421392
 time ruby bubble.rb < 25000d.in
 Bubble: 25000
-0.671439207
+0.67772776
 time ruby bubble.rb < 50000d.in
 Bubble: 50000
-2.677516478
+2.818021259
 time ruby bubble.rb < 100000d.in
 Bubble: 100000
-10.850632477
+11.172934111
 time ruby bubble.rb < 500000d.in
 Bubble: 500000
-278.250888244
+321.542602214

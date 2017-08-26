@@ -1,6 +1,6 @@
 # Gera os arquivos de entrada
 
-quantia = [25000,50000,100000,1000000]
+quantia = [25000,50000,100000,500000]
 
 # na.in -> Crescente
 # nb.in -> Decrescente
