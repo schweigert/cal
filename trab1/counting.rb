@@ -12,7 +12,7 @@ def countingfunc v
 
 
   for i in 0...couting.size
-    next if i == nil || i == 0
+    next if couting[i] == nil || couting[i] == 0
     r = r + ([i]*couting[i])
   end
   return r
@@ -29,4 +29,4 @@ size.times do
 	source << gets.to_i
 end
 
-countingfunc source
+puts(countingfunc source)
