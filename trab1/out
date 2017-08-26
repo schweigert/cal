@@ -1,0 +1,22 @@
+time ruby insert.rb < 25000a.in
+Insert: 25000
+0.000517931
+time ruby insert.rb < 50000a.in
+Insert: 50000
+0.000998702
+time ruby insert.rb < 100000a.in
+Insert: 100000
+0.002169006
+time ruby insert.rb < 1000000a.in
+Insert: 1000000
+0.022870711
+time ruby insert.rb < 25000b.in
+Insert: 25000
+1.073727655
+time ruby insert.rb < 50000b.in
+Insert: 50000
+4.42843399
+time ruby insert.rb < 100000b.in
+Insert: 100000
+17.419136354
+time ruby insert.rb < 1000000b.in

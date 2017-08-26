@@ -46,5 +46,8 @@ n = gets.to_i
 n.times do
 	source << gets.to_i
 end
-
+t = Time.now
+puts "Heap: #{n}"
+# puts "#{Time.now - t}"
 source.heapsort!
+puts "#{Time.now - t}"

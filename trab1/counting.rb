@@ -28,5 +28,8 @@ size = gets.to_i
 size.times do
 	source << gets.to_i
 end
-
-puts(countingfunc source)
+t = Time.now
+puts "Counting: #{size}"
+# puts "#{Time.now - t}"
+countingfunc source
+puts "#{Time.now - t}"

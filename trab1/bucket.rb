@@ -55,4 +55,10 @@ n.times do
   source << gets.to_i
 end
 
+t = Time.now
+puts "Bucket: #{n}"
+# puts "#{Time.now - t}"
+
 bucket source
+
+puts "#{Time.now - t}"

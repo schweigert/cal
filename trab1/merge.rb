@@ -27,5 +27,8 @@ n.times do
 	source << gets.to_i
 
 end
-
+t = Time.now
+puts "Merge: #{n}"
+# puts "#{Time.now - t}"
 mergesort source
+puts "#{Time.now - t}"
