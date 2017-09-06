@@ -209,3 +209,29 @@ insert_d:
 	time ruby insert.rb < 50000d.in
 	time ruby insert.rb < 100000d.in
 	time ruby insert.rb < 500000d.in
+
+counting_w: counting_w_a counting_w_b counting_w_c counting_w_d
+
+counting_w_a:
+	time ruby counting_wol.rb < 25000a.in
+	time ruby counting_wol.rb < 50000a.in
+	time ruby counting_wol.rb < 100000a.in
+	time ruby counting_wol.rb < 500000a.in
+
+counting_w_b:
+	time ruby counting_wol.rb < 25000b.in
+	time ruby counting_wol.rb < 50000b.in
+	time ruby counting_wol.rb < 100000b.in
+	time ruby counting_wol.rb < 500000b.in
+
+counting_w_c:
+	time ruby counting_wol.rb < 25000c.in
+	time ruby counting_wol.rb < 50000c.in
+	time ruby counting_wol.rb < 100000c.in
+	time ruby counting_wol.rb < 500000c.in
+
+counting_w_d:
+	time ruby counting_wol.rb < 25000d.in
+	time ruby counting_wol.rb < 50000d.in
+	time ruby counting_wol.rb < 100000d.in
+	time ruby counting_wol.rb < 500000d.in
