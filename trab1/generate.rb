@@ -30,7 +30,7 @@ for i in quantia
 		c.puts(rand(i))
 		# Aleatório com Desvio
 		if pos == n
-			d.puts i*100
+			d.puts "100000000"
 		else
 			d.puts rand(i)
 		end
