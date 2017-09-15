@@ -1,0 +1,336 @@
+time ruby insert.rb < 25000a.in
+Insert: 25000
+6.8411e-05
+time ruby insert.rb < 50000a.in
+Insert: 50000
+0.000115146
+time ruby insert.rb < 100000a.in
+Insert: 100000
+0.000204647
+time ruby insert.rb < 500000a.in
+Insert: 500000
+0.000913881
+time ruby insert.rb < 25000b.in
+Insert: 25000
+0.008873616
+time ruby insert.rb < 50000b.in
+Insert: 50000
+0.035086059
+time ruby insert.rb < 100000b.in
+Insert: 100000
+0.14842128
+time ruby insert.rb < 500000b.in
+Insert: 500000
+3.51294729
+time ruby insert.rb < 25000c.in
+Insert: 25000
+0.006036434
+time ruby insert.rb < 50000c.in
+Insert: 50000
+0.023331244
+time ruby insert.rb < 100000c.in
+Insert: 100000
+0.098356475
+time ruby insert.rb < 500000c.in
+Insert: 500000
+2.534166949
+time ruby insert.rb < 25000d.in
+Insert: 25000
+0.006074886
+time ruby insert.rb < 50000d.in
+Insert: 50000
+0.023094529
+time ruby insert.rb < 100000d.in
+Insert: 100000
+0.094850767
+time ruby insert.rb < 500000d.in
+Insert: 500000
+2.404533542
+time ruby bucket.rb < 25000a.in
+Bucket: 25000
+0.124625657
+time ruby bucket.rb < 50000a.in
+Bucket: 50000
+0.259956991
+time ruby bucket.rb < 100000a.in
+Bucket: 100000
+0.541402755
+time ruby bucket.rb < 500000a.in
+Bucket: 500000
+2.999137717
+time ruby bucket.rb < 25000b.in
+Bucket: 25000
+0.12325116
+time ruby bucket.rb < 50000b.in
+Bucket: 50000
+0.259340666
+time ruby bucket.rb < 100000b.in
+Bucket: 100000
+0.542037752
+time ruby bucket.rb < 500000b.in
+Bucket: 500000
+2.988330593
+time ruby bucket.rb < 25000c.in
+Bucket: 25000
+0.126304597
+time ruby bucket.rb < 50000c.in
+Bucket: 50000
+0.261980533
+time ruby bucket.rb < 100000c.in
+Bucket: 100000
+0.544847947
+time ruby bucket.rb < 500000c.in
+Bucket: 500000
+2.983378848
+time ruby bucket.rb < 25000d.in
+Bucket: 25000
+0.154326517
+time ruby bucket.rb < 50000d.in
+Bucket: 50000
+0.306922934
+time ruby bucket.rb < 100000d.in
+Bucket: 100000
+0.640359923
+time ruby bucket.rb < 500000d.in
+Bucket: 500000
+3.453753035
+time ruby counting.rb < 25000a.in
+Counting: 25000
+0.625503482
+time ruby counting.rb < 50000a.in
+Counting: 50000
+2.190866391
+time ruby counting.rb < 100000a.in
+Counting: 100000
+8.260637134
+time ruby counting.rb < 500000a.in
+Counting: 500000
+256.802167036
+time ruby counting.rb < 25000b.in
+Counting: 25000
+0.617032274
+time ruby counting.rb < 50000b.in
+Counting: 50000
+2.195902643
+time ruby counting.rb < 100000b.in
+Counting: 100000
+8.323244724
+time ruby counting.rb < 500000b.in
+Counting: 500000
+256.480219472
+time ruby counting.rb < 25000c.in
+Counting: 25000
+0.416276496
+time ruby counting.rb < 50000c.in
+Counting: 50000
+1.548549676
+time ruby counting.rb < 100000c.in
+Counting: 100000
+5.651517246
+time ruby counting.rb < 500000c.in
+Counting: 500000
+158.320821037
+time ruby counting.rb < 25000d.in
+Counting: 25000
+0.698396665
+time ruby counting.rb < 50000d.in
+Counting: 50000
+2.096958821
+time ruby counting.rb < 100000d.in
+Counting: 100000
+6.648447173
+time ruby counting.rb < 500000d.in
+Counting: 500000
+166.540799009
+time ruby heap.rb < 25000a.in
+Heap: 25000
+0.168326811
+time ruby heap.rb < 50000a.in
+Heap: 50000
+0.360078505
+time ruby heap.rb < 100000a.in
+Heap: 100000
+0.76978209
+time ruby heap.rb < 500000a.in
+Heap: 500000
+4.499425968
+time ruby heap.rb < 25000b.in
+Heap: 25000
+0.109078148
+time ruby heap.rb < 50000b.in
+Heap: 50000
+0.225600648
+time ruby heap.rb < 100000b.in
+Heap: 100000
+0.494291783
+time ruby heap.rb < 500000b.in
+Heap: 500000
+2.940326531
+time ruby heap.rb < 25000c.in
+Heap: 25000
+0.112109292
+time ruby heap.rb < 50000c.in
+Heap: 50000
+0.244309219
+time ruby heap.rb < 100000c.in
+Heap: 100000
+0.539100655
+time ruby heap.rb < 500000c.in
+Heap: 500000
+2.951505932
+time ruby heap.rb < 25000d.in
+Heap: 25000
+0.114753849
+time ruby heap.rb < 50000d.in
+Heap: 50000
+0.24420122
+time ruby heap.rb < 100000d.in
+Heap: 100000
+0.518816995
+time ruby heap.rb < 500000d.in
+Heap: 500000
+3.146500609
+time ruby merge.rb < 25000a.in
+Merge: 25000
+0.044832712
+time ruby merge.rb < 50000a.in
+Merge: 50000
+0.095764405
+time ruby merge.rb < 100000a.in
+Merge: 100000
+0.211226177
+time ruby merge.rb < 500000a.in
+Merge: 500000
+1.127945711
+time ruby merge.rb < 25000b.in
+Merge: 25000
+0.047646049
+time ruby merge.rb < 50000b.in
+Merge: 50000
+0.099235324
+time ruby merge.rb < 100000b.in
+Merge: 100000
+0.206117053
+time ruby merge.rb < 500000b.in
+Merge: 500000
+1.115760002
+time ruby merge.rb < 25000c.in
+Merge: 25000
+0.077870366
+time ruby merge.rb < 50000c.in
+Merge: 50000
+0.163978265
+time ruby merge.rb < 100000c.in
+Merge: 100000
+0.328794058
+time ruby merge.rb < 500000c.in
+Merge: 500000
+1.881461409
+time ruby merge.rb < 25000d.in
+Merge: 25000
+0.073435359
+time ruby merge.rb < 50000d.in
+Merge: 50000
+0.155537097
+time ruby merge.rb < 100000d.in
+Merge: 100000
+0.33718314
+time ruby merge.rb < 500000d.in
+Merge: 500000
+1.910772315
+time ruby quick.rb < 25000a.in
+Quick: 25000
+0.127196468
+time ruby quick.rb < 50000a.in
+Quick: 50000
+0.264665376
+time ruby quick.rb < 100000a.in
+Quick: 100000
+0.570430529
+time ruby quick.rb < 500000a.in
+Quick: 500000
+3.174489812
+time ruby quick.rb < 25000b.in
+Quick: 25000
+0.129381934
+time ruby quick.rb < 50000b.in
+Quick: 50000
+0.266924117
+time ruby quick.rb < 100000b.in
+Quick: 100000
+0.555988156
+time ruby quick.rb < 500000b.in
+Quick: 500000
+3.101804225
+time ruby quick.rb < 25000c.in
+Quick: 25000
+0.127606982
+time ruby quick.rb < 50000c.in
+Quick: 50000
+0.286557754
+time ruby quick.rb < 100000c.in
+Quick: 100000
+0.585612903
+time ruby quick.rb < 500000c.in
+Quick: 500000
+3.172996154
+time ruby quick.rb < 25000d.in
+Quick: 25000
+0.127822357
+time ruby quick.rb < 50000d.in
+Quick: 50000
+0.27388308
+time ruby quick.rb < 100000d.in
+Quick: 100000
+0.574027993
+time ruby quick.rb < 500000d.in
+Quick: 500000
+3.165438064
+time ruby bubble.rb < 25000a.in
+Bubble: 25000
+0.642288854
+time ruby bubble.rb < 50000a.in
+Bubble: 50000
+2.576152942
+time ruby bubble.rb < 100000a.in
+Bubble: 100000
+10.281290279
+time ruby bubble.rb < 500000a.in
+Bubble: 500000
+260.147110479
+time ruby bubble.rb < 25000b.in
+Bubble: 25000
+1.715216847
+time ruby bubble.rb < 50000b.in
+Bubble: 50000
+6.872168005
+time ruby bubble.rb < 100000b.in
+Bubble: 100000
+27.499797021
+time ruby bubble.rb < 500000b.in
+Bubble: 500000
+687.429538064
+time ruby bubble.rb < 25000c.in
+Bubble: 25000
+0.673396456
+time ruby bubble.rb < 50000c.in
+Bubble: 50000
+2.676280917
+time ruby bubble.rb < 100000c.in
+Bubble: 100000
+10.71827513
+time ruby bubble.rb < 500000c.in
+Bubble: 500000
+272.161706875
+time ruby bubble.rb < 25000d.in
+Bubble: 25000
+0.690203157
+time ruby bubble.rb < 50000d.in
+Bubble: 50000
+2.675655863
+time ruby bubble.rb < 100000d.in
+Bubble: 100000
+12.783790541
+time ruby bubble.rb < 500000d.in
+Bubble: 500000
+269.911156989

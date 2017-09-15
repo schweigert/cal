@@ -1,0 +1,48 @@
+time ruby bucket.rb < 25000a.in
+Bucket: 25000
+0.143485398
+time ruby bucket.rb < 50000a.in
+Bucket: 50000
+0.298166402
+time ruby bucket.rb < 100000a.in
+Bucket: 100000
+0.583397894
+time ruby bucket.rb < 500000a.in
+Bucket: 500000
+3.268512999
+time ruby bucket.rb < 25000b.in
+Bucket: 25000
+0.173855577
+time ruby bucket.rb < 50000b.in
+Bucket: 50000
+0.324737511
+time ruby bucket.rb < 100000b.in
+Bucket: 100000
+0.616144348
+time ruby bucket.rb < 500000b.in
+Bucket: 500000
+3.311366359
+time ruby bucket.rb < 25000c.in
+Bucket: 25000
+0.156073396
+time ruby bucket.rb < 50000c.in
+Bucket: 50000
+0.323561323
+time ruby bucket.rb < 100000c.in
+Bucket: 100000
+0.634181458
+time ruby bucket.rb < 500000c.in
+Bucket: 500000
+3.329602228
+time ruby bucket.rb < 25000d.in
+Bucket: 25000
+0.194917958
+time ruby bucket.rb < 50000d.in
+Bucket: 50000
+0.3725967
+time ruby bucket.rb < 100000d.in
+Bucket: 100000
+0.726815843
+time ruby bucket.rb < 500000d.in
+Bucket: 500000
+3.724578884

@@ -1,0 +1,48 @@
+time ruby counting_wol.rb < 25000a.in
+Counting: 25000
+0.006338469
+time ruby counting_wol.rb < 50000a.in
+Counting: 50000
+0.012662702
+time ruby counting_wol.rb < 100000a.in
+Counting: 100000
+0.025110563
+time ruby counting_wol.rb < 500000a.in
+Counting: 500000
+0.125416121
+time ruby counting_wol.rb < 25000b.in
+Counting: 25000
+0.00637667
+time ruby counting_wol.rb < 50000b.in
+Counting: 50000
+0.012652759
+time ruby counting_wol.rb < 100000b.in
+Counting: 100000
+0.025453645
+time ruby counting_wol.rb < 500000b.in
+Counting: 500000
+0.125754793
+time ruby counting_wol.rb < 25000c.in
+Counting: 25000
+0.00618648
+time ruby counting_wol.rb < 50000c.in
+Counting: 50000
+0.012114261
+time ruby counting_wol.rb < 100000c.in
+Counting: 100000
+0.024330653
+time ruby counting_wol.rb < 500000c.in
+Counting: 500000
+0.126019949
+time ruby counting_wol.rb < 25000d.in
+Counting: 25000
+0.124711993
+time ruby counting_wol.rb < 50000d.in
+Counting: 50000
+0.251944615
+time ruby counting_wol.rb < 100000d.in
+Counting: 100000
+0.50168271
+time ruby counting_wol.rb < 500000d.in
+Counting: 500000
+2.519302037
