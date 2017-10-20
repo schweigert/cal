@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import(
+  "fmt"
+  "time"
+  "math/rand"
+  )
 
 const (
   TAM_CRIVO = 100000
@@ -48,6 +52,19 @@ func crivo(n int) []int {
   return ret
 }
 
-func main() {
+func gera_primo_pequeno() int {
+  c := crivo(TAM_CRIVO)
+  s := len(c)
 
+
+  s1 := rand.NewSource(time.Now().UnixNano())
+  r1 := rand.New(s1)
+
+  r := r1.Intn(s/2) + s/2
+
+  return c[r]
+}
+
+func main() {
+  fmt.Println(gera_primo_pequeno())
 }
