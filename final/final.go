@@ -52,6 +52,7 @@ func crivo(n int) []int {
   return ret
 }
 
+// Retorna um int (primo) aleatório
 func gera_primo_pequeno() int {
   c := crivo(TAM_CRIVO)
   s := len(c)
