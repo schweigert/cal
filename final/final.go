@@ -7,6 +7,6 @@ import(
 
 func main () {
   private, public := rsa.NewCert()
-  fmt.Println(public.N)
-  fmt.Println(private.N)
+  fmt.Println(public)
+  fmt.Println(private)
 }

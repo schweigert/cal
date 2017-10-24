@@ -104,3 +104,12 @@ func randomBigNoneber(bits int) *big.Int {
   ret.SetString(str, 2)
   return ret
 }
+
+func euclid(a, b *big.Int) *big.Int {
+  if b.Cmp(big.NewInt(0)) == 0 {
+    return a
+  }
+  amb := big.NewInt(0)
+  amb.Mod(a,b)
+  return euclid(b, amb)
+}
