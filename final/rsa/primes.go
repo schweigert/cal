@@ -113,3 +113,26 @@ func euclid(a, b *big.Int) *big.Int {
   amb.Mod(a,b)
   return euclid(b, amb)
 }
+
+func extendEuclid(a,b *big.Int) (*big.Int,*big.Int,*big.Int) {
+  if b.Cmp(big.NewInt(0)) == 0 {
+    return a, big.NewInt(1), big.NewInt(0)
+  }
+  amb := big.NewInt(0)
+  amb.Mod(a,b)
+  dl,xl,yl := extendEuclid(b,amb)
+
+  d := dl
+  x := xl
+  y := big.NewInt(0)
+
+  adb := big.NewInt(0)
+  ryl := big.NewInt(0)
+
+  adb.Div(a,b)
+  ryl.Mul(adb,yl)
+
+  y.Sub(xl,ryl)
+
+  return d,x,y
+}

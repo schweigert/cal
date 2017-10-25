@@ -1,6 +1,7 @@
 package rsa
 
 import (
+  "fmt"
   "math/big"
 )
 
@@ -15,8 +16,8 @@ type PrivateCert struct {
 }
 
 func NewCert() (*PrivateCert, *PublicCert) {
-  p := RandomBigPrime()
-  q := RandomBigPrime()
+  p := big.NewInt(521) // RandomBigPrime()
+  q := big.NewInt(383) // RandomBigPrime()
 
   n   := big.NewInt(0)
 
@@ -24,6 +25,9 @@ func NewCert() (*PrivateCert, *PublicCert) {
 
   p_1 := big.NewInt(0)
   q_1 := big.NewInt(0)
+
+  pq := big.NewInt(0)
+  pq.Mul(p,q)
 
   pq_1 := big.NewInt(0)
 
@@ -34,7 +38,14 @@ func NewCert() (*PrivateCert, *PublicCert) {
 
   n.Mul(p,q)
 
-  e := big.NewInt((int64)(RandomPrime()))
+  e := big.NewInt(227) // big.NewInt((int64)(RandomPrime()))
 
-  return &PrivateCert{N: n}, &PublicCert{N: n, E: e}
+  mdc, x, y := extendEuclid(big.NewInt(99),big.NewInt(78))
+
+  fmt.Println(mdc,x,y)
+
+  d := big.NewInt(0)
+  d.Mod(x,pq)
+
+  return &PrivateCert{N: n, D: d}, &PublicCert{N: n, E: e}
 }
