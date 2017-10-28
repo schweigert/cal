@@ -58,6 +58,7 @@ int str_len(string a){
   return r;
 }
 
+uint data_size = 0;
 
 struct List* create_data(string name) {
   struct Data* d = malloc(sizeof(struct Data));
@@ -69,6 +70,8 @@ struct List* create_data(string name) {
   r->code = hash(name);
   r->other = NULL;
   r->data = d;
+
+  data_size++;
 
   return r;
 }
@@ -144,28 +147,16 @@ struct List* get_last(struct List* l){
     return get_last(l->other);
 }
 
-struct List* quick(struct List* a){
-  if(a->other == NULL) return a;
-
-  struct List *i, *m;
-  m = a;
-  
-  i = a->other;
-  while(true){
-    if(i == NULL) break;
-    // #TODO
-
-    if(i->cod)
-
-    i = i->ther;
-  }
-
-  return a;
+int comp(const void* elm1, const void* elm2){
+  struct List* a = *((struct List**) elm1);
+  struct List* b = *((struct List**) elm2);
+  return (int)(a->code - b->code);
 }
 
 void print_sorted() {
   struct List *l = NULL, *j = NULL, *k = NULL;
   uint i;
+
   for(i = 0; i < SZ_DATAMAP; i++){
     j = datamap[i];
     if(j == NULL) continue;
@@ -179,6 +170,22 @@ void print_sorted() {
     l->other = j;
   }
 
+  struct List **master = malloc(sizeof(struct List *)*data_size);
+
+  for(i = 0; i < data_size; i++){
+    if(k == NULL){
+      master[i] = NULL;
+    } else {
+      master[i] = k;
+      k = k->other;
+    }
+  }
+
+  qsort(master, data_size, sizeof(struct List*), comp);
+
+  for(i = 0; i < data_size; i++){
+    if(master[i]->data->alive) printf("%s %d\n",master[i]->data->name,master[i]->data->kd);
+  }
 }
 
 int main(void){
@@ -196,5 +203,5 @@ int main(void){
   }
 
   printf("HALL OF MURDERERS\n");
-
+  print_sorted();
 }
