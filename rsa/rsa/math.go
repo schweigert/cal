@@ -42,3 +42,19 @@ func Comp(a,b *big.Int) bool {
   }
   return false
 }
+
+func CompEqualZero(a *big.Int) bool {
+  b := NewNum(0);
+  if(Comp(a,b)) {
+    return true
+  }
+  return false
+}
+
+func CompNotEqualZero(a *big.Int) bool {
+  b := NewNum(0);
+  if(!Comp(a,b)) {
+    return true
+  }
+  return false
+}

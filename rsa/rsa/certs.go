@@ -14,5 +14,15 @@ type PrivateCert struct {
 
 func NewCert() (*PrivateCert, *PublicCert) {
 
-  return &PrivateCert{}, &PublicCert{}
+  p := randomBigPrime()
+  q := randomBigPrime()
+
+  n := Mul(p,q)
+
+  phi := Mul(Sub(p,NewNum(1)),Sub(q,NewNum(1)))
+
+  e := randomSmallPrime()
+
+  return &PrivateCert{N: n}, &PublicCert{N: n, E: e}
+
 }
