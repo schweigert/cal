@@ -58,3 +58,35 @@ func CompNotEqualZero(a *big.Int) bool {
   }
   return false
 }
+
+func CompLess(a, b *big.Int) bool {
+  if(a.Cmp(b) < 0) {
+    return true
+  }
+  return false
+}
+
+func CompBigger(a, b *big.Int) bool {
+  if(a.Cmp(b) > 0) {
+    return true
+  }
+  return false
+}
+
+func CompBiggerZero(a *big.Int) bool {
+  b := NewNum(0)
+
+  if(CompBigger(a,b)){
+    return true
+  }
+  return false
+}
+
+func CompLessZero(a *big.Int) bool {
+  b := NewNum(0)
+
+  if(CompLess(a,b)){
+    return true
+  }
+  return false
+}

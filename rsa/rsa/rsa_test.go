@@ -93,3 +93,17 @@ func TestComp(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestBigger(t *testing.T) {
+	t.Log("TestBigger")
+	a := NewNum(3)
+	b := NewNum(5)
+
+	if(CompBigger(a,b)){
+		t.Fail()
+	}
+
+	if(!CompBigger(b,a)){
+		t.Fail()
+	}
+}

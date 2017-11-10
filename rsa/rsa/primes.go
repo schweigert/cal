@@ -12,12 +12,30 @@ const(
 )
 
 func multiplicativeInverse(e,phi *big.Int) *big.Int {
-  d := newNum(0)
-  x1 := newNum(0)
-  x2 := newNum(1)
-  y1 := newNum(1)
+  d := NewNum(0)
+  x1 := NewNum(0)
+  x2 := NewNum(1)
+  y1 := NewNum(1)
 
   temp_phi := phi
+
+  for CompBiggerZero(e) {
+    temp1 := Div(temp_phi,e)
+    temp2 := Sub(temp_phi,Mul(temp1, e))
+    temp_phi = e
+    e = temp2
+
+    x := Sub(x2,Mul(temp1, x1))
+    y := Sub(d,Mul(temp1, y1))
+
+    x2 = x1
+    x1 = x
+    d = y1
+    y1 = y
+
+  }
+  
+  return Add(d,phi)
 }
 
 func randomPrime() int {
