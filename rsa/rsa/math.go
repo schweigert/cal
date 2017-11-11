@@ -90,3 +90,28 @@ func CompLessZero(a *big.Int) bool {
   }
   return false
 }
+
+func Exp(x,y,m *big.Int) *big.Int {
+  r := NewNum(0)
+  r.Exp(x,y,m)
+  return r
+}
+
+func Sqrt(n, unity *big.Int) *big.Int {
+	// Initial guess = 2^(log_2(n)/2)
+	guess := NewNum(2)
+	guess.Exp(guess, NewNum(int64(n.BitLen()/2)), nil)
+
+	n_big := NewNum(0).Mul(n, unity)
+	// Now refine using Newton's method
+	prev_guess := NewNum(0)
+	for {
+		prev_guess.Set(guess)
+		guess.Add(guess, NewNum(0).Div(n_big, guess))
+		guess.Div(guess, NewNum(2))
+		if guess.Cmp(prev_guess) == 0  {
+			break
+		}
+	}
+	return guess
+}

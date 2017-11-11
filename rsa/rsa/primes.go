@@ -6,10 +6,9 @@ import(
   "math/rand"
 )
 
-const(
-  LEN_CRIVO = 10000
-  LEN_BIG_PRIME = 32
-)
+
+var LEN_CRIVO int
+var LEN_BIG_PRIME int
 
 func multiplicativeInverse(e,phi *big.Int) *big.Int {
   d := NewNum(0)
@@ -34,7 +33,7 @@ func multiplicativeInverse(e,phi *big.Int) *big.Int {
     y1 = y
 
   }
-  
+
   return Add(d,phi)
 }
 
