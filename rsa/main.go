@@ -9,7 +9,7 @@ import (
 func main() {
 
   rsa.LEN_CRIVO = 10000
-  rsa.LEN_BIG_PRIME = 32
+  rsa.LEN_BIG_PRIME = 255
 
   // O(n² + Klog(K)²)
   priv, pub := rsa.NewCert()
@@ -31,41 +31,22 @@ func main() {
 // O(n²k)
 // n := p*q (da chave). BEM GRANDE
 // k := número de bits de n
+// k := log(p*q) = log(n)
 // o(n²log(n))
 func bruteForce(cert *rsa.PublicCert)(*big.Int,*big.Int){
   n := cert.N
-  i := rsa.NewNum(2)
-  one := rsa.NewNum(1)
-  s := rsa.Sub(n,one)
-
-  lista := make([]*big.Int, 5000)
-  l := 0
-  // O(nk)
-  for {
-    // O(k)
-    if(rsa.CompBigger(i,s)){
-      break
-    }
-    // O(k)
-    if(rsa.CompEqualZero(rsa.Mod(n,i))) {
-      lista[l] = i
-      l++
-    }
-    // O(k)
-    i = rsa.Add(i, one)
-  }
-
-  var a,b *big.Int
-  // O(n²k)
-  for m := 0; m < l; m++ {
-    // O(nk)
-    for k := m; k < l; k++ {
-      // O(k)
-      if rsa.Comp(n,rsa.Mul(lista[m],lista[k])) {
-        a,b =  lista[m],lista[k]
+  one := rsa.NewNum(2)
+  for i := rsa.NewNum(3); rsa.CompLess(i,n); i = rsa.Add(i, one) {
+    for j := i; ; j = rsa.Add(j, one) {
+      mul := rsa.Mul(i,j)
+      if rsa.CompBigger(mul,n){
+        break
+      }
+      if rsa.Comp(n, mul) {
+        return i, j;
       }
     }
   }
 
-  return a,b
+  return n, rsa.NewNum(1);
 }

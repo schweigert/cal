@@ -2,6 +2,7 @@ package rsa
 
 import (
   "math/big"
+  "fmt"
 )
 
 type PublicCert struct {
@@ -21,6 +22,7 @@ func NewCert() (*PrivateCert, *PublicCert) {
   // O(k)
   p := randomBigPrime()
   q := randomBigPrime()
+  fmt.Println(p,q)
   // O(klog(k)log(log(k)))
   n := Mul(p,q)
 

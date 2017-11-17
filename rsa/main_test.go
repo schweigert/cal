@@ -26,3 +26,13 @@ func BenchmarkBruteForce13(b *testing.B) { benchmarkBruteForce(13,b) }
 func BenchmarkBruteForce14(b *testing.B) { benchmarkBruteForce(14,b) }
 func BenchmarkBruteForce15(b *testing.B) { benchmarkBruteForce(15,b) }
 func BenchmarkBruteForce16(b *testing.B) { benchmarkBruteForce(16,b) }
+
+func TestNewInt(t *testing.T) {
+  rsa.LEN_CRIVO = 10000
+  rsa.LEN_BIG_PRIME = 32
+
+  // O(n² + Klog(K)²)
+  priv, pub := rsa.NewCert()
+  fmt.Println(priv)
+  fmt.Println(pub)
+}
