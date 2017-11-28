@@ -119,3 +119,23 @@ cabra\s
   110 00 100 010 00
 "
 ```
+
+# Exercício 5
+Multiplicar as matrizes com a melhor eficiência:
+```ruby
+# M(N,M)
+A1(2,5)
+A2(5,4)
+A3(4,3)
+A4(3,7)
+```
+Realizar `A1*A2*A3*A4`
+
+Sabemos que a complexidade de multiplicar `Ax(n,m)` e `Ay(m,p)` é `O(nmp)`.
+Lembramos que `Ax * Ay = B(n,p)`.
+
+- (((A1 A2) A3) A4): 106
+- ((A1 (A2 A3)) A4): 132
+- (A1 ((A2 A3) A4)): 235
+- ((A1 A2) (A3 A4)): 180
+- (A1 (A2 (A3 A4))): 294
