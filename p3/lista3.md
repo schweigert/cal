@@ -140,6 +140,23 @@ Lembramos que `Ax * Ay = B(n,p)`.
 - ((A1 A2) (A3 A4)): 180
 - (A1 (A2 (A3 A4))): 294
 
+| 000 | 1x2 | 1x2x3 | 1x2x3x4 |
+|     | 000 | 2x3   | 2x3x4   |
+|     |     | 000   | 3x4     |
+|     |     |       | 000     |
+
+M:
+| 2x5 | 2x4 | 1x2x3 | 1x2x3x4 |
+|     | 5x4 | 5x3   | 2x3x4   |
+|     |     | 4x3   | 4x7     |
+|     |     |       | 3x7     |
+
+S:
+| 000 | 040 | 064 |     |
+| 000 | 000 | 060 |     |
+| 000 | 000 | 000 | 084 |
+| 000 | 000 | 000 | 000 |
+
 # Exercício 7
 
 Escreva um programa em C que verifique o SUBSET-SUM é válido
