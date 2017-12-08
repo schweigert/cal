@@ -3,49 +3,49 @@
 #define MAXN 2000001
 using namespace std;
 
-bitset<MAXN> prime;
-int divr[MAXN], ans[MAXN];
+bitset<MAXN> primo;
+int divr[MAXN], resp[MAXN];
 
-void calc()
+void calcular()
 {
-	prime.set();
+	primo.set();
 	memset(divr, 0 , sizeof(divr));
-	
+
 	for (int i = 2; i < MAXN; i++)
 	{
-		if (prime[i])
+		if (primo[i])
 		{
 			divr[i] = 2;
 			for (int j = i + i; j < MAXN; j+= i)
 			{
-				prime.reset(j);
-				
+				primo.reset(j);
+
 				int divs = 0;
 				int tam = j;
-				
+
 				while ( tam % i == 0) tam/= i, divs++;
-				
+
 				if (divr[j] == 0) divr[j] = divs + 1;
 				else divr[j]*= (divs + 1);
 			}
 		}
 	}
-	
-	ans[1] = 0;
+
+	resp[1] = 0;
 	for (int i = 2; i <= MAXN; i++)
 	{
-		ans[i] = ans[i - 1];
-		if (prime[divr[i]]) ans[i]++;
-	}	
+		resp[i] = resp[i - 1];
+		if (primo[divr[i]]) resp[i]++;
+	}
 }
 
 int main()
 {
 	int n;
-	
-	calc();
+
+	calcular();
 	while(cin >> n)
 	{
-		cout << ans[n] << '\n';
+		cout << resp[n] << '\n';
 	}
 }

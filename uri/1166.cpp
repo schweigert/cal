@@ -3,32 +3,32 @@
 
 using namespace std;
 
-int maxBalls[51];
+int m_bolas[51];
 
-bool isPerfectSquare(int n) {
+bool quadrado_perfeito(int n) {
    int root = (int)(sqrt(n) + 0.5);
 
    return root * root == n;
 }
 
-void calculateMaxBalls() {
-   int lastBall[51] = { 0 };
+void calculatem_bolas() {
+   int ultima_bola[51] = { 0 };
 
    int next = 1;
    int peg = 0;
 
    while(true) {
-      bool shouldUseNextPeg = true;
+      bool continua_usando = true;
       for(int i = 1; i <= peg; ++i) {
-         if (isPerfectSquare(lastBall[i] + next)) {
-            shouldUseNextPeg = false;
-            lastBall[i] = next;
+         if (quadrado_perfeito(ultima_bola[i] + next)) {
+            continua_usando = false;
+            ultima_bola[i] = next;
          }
       }
 
-      if (shouldUseNextPeg) {
-         maxBalls[peg] = next - 1;
-         lastBall[++peg] = next;
+      if (continua_usando) {
+         m_bolas[peg] = next - 1;
+         ultima_bola[++peg] = next;
 
          if (peg == 51)
             break;
@@ -39,13 +39,13 @@ void calculateMaxBalls() {
 }
 
 int main() {
-   calculateMaxBalls();
+   calculatem_bolas();
    int t;
    cin >> t;
 
    for(int i = 0; i < t; ++i) {
       int n;
       cin >> n;
-      cout << maxBalls[n] << '\n';
+      cout << m_bolas[n] << '\n';
    }
 }

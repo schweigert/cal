@@ -3,11 +3,11 @@
 using namespace std;
 
 string g[4][3];
-pair<int, int> find_p(char a) {
+pair<int, int> encontra_p(char a) {
   for (int i = 0; i < 4; ++i)
     for (int j = 0; j < 3; ++j)
       if (g[i][j].find(a) != string::npos)
-        return make_pair(i, j);
+        return cria_p(i, j);
   assert(false);
 }
 
@@ -21,7 +21,7 @@ int rd[500][15][15];
 int cur_round = 1;
 double dt[15][15];
 
-double go(string &s, int id, int a, int b) {
+double vai(string &s, int id, int a, int b) {
   if (s.size() <= id) return 0;
 
   if (rd[id][a][b] >= cur_round)
@@ -30,13 +30,13 @@ double go(string &s, int id, int a, int b) {
   rd[id][a][b] = cur_round;
 
   pair<int, int> l(a / 3, a % 3), r(b / 3, b % 3);
-  pair<int, int> t = find_p(s[id]);
+  pair<int, int> t = encontra_p(s[id]);
   int tt = t.first * 3 + t.second;
   double ans = 1e100;
   if (b != tt)
-    ans = min(ans, go(s, id + 1, tt, b) + dt[a][tt]);
+    ans = min(ans, vai(s, id + 1, tt, b) + dt[a][tt]);
   if (a != tt)
-    ans = min(ans, go(s, id + 1, a, tt) + dt[tt][b]);
+    ans = min(ans, vai(s, id + 1, a, tt) + dt[tt][b]);
   return dp[id][a][b] = ans;
 }
 
@@ -59,22 +59,22 @@ int main() {
       dt[i][j] = sqrt(x * x + y * y);
     }
 
-  string line;
+  string linha;
   cout << fixed << setprecision(2);
-  while (getline(cin, line)) {
+  while (getline(cin, linha)) {
     string target;
-    for (int i = 0; i + 1 < line.size(); ++i) {
-      target.push_back(line[i]);
-      if (find_p(line[i]) == find_p(line[i + 1]))
+    for (int i = 0; i + 1 < linha.size(); ++i) {
+      target.push_back(linha[i]);
+      if (encontra_p(linha[i]) == encontra_p(linha[i + 1]))
         target.push_back('#');
     }
-    target.push_back(line.back());
+    target.push_back(linha.back());
     double extra = 0;
     for (auto &i : target) {
-      auto tt = find_p(i);
+      auto tt = encontra_p(i);
       extra += (g[tt.first][tt.second].find(i) + 1);
     }
-    cout << extra * 0.2 + go(target, 0, 3, 5) / 30.0 << endl;
+    cout << extra * 0.2 + vai(target, 0, 3, 5) / 30.0 << endl;
     cur_round++;
   }
   return 0;

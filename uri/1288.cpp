@@ -8,13 +8,13 @@ int max(int a, int b){
 
 int main(){
     int i, j, n, p, op, a, comp;
-    
+
     scanf("%d",&op);
     for(a = 0; a < op; a++){
         scanf("%d",&n);
         int w[n+1];
         int v[n+1];
-        
+
         for(i = 0; i < n; i++){
               scanf("%d %d",&v[i],&w[i]);
         }
@@ -22,7 +22,7 @@ int main(){
         int m[n+1][p+1];
         memset(m, 0, sizeof(m[0][0]) * (n+1) * (p+1));
         scanf("%d",&comp);
-        
+
         for(int i = 1; i <= p; i++){
               for(int j = 0; j < n; j++){
                    if(j > 0){
@@ -35,7 +35,7 @@ int main(){
                    }
                }
         }
-        
+
         if(m[n-1][p] >= comp)printf("Missao completada com sucesso\n");
         else printf("Falha na missao\n");
     }
